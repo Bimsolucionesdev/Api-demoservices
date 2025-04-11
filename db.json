@@ -1,72 +1,128 @@
 {
-    "usuarios": [
-        {
-            "id": "1",
-            "nombre": "María Gonsalez",
-            "telefono": "+593985912136",
-            "email": "ani@gmail.com",
-            "age": 21,
-            "cedula": "1726953969",
-            "servicios": [
-                {
-                    "tipo": "Agua Potable",
-                    "numeroContrato": "12345",
-                    "deuda": {
-                        "montoAdeudado": 100,
-                        "cantidadMesesAdeudados": 2,
-                        "detalleMesesAdeudados": [
-                            {
-                                "mes": "Enero",
-                                "anio": 2023,
-                                "monto": 50
-                            },
-                            {
-                                "mes": "Febrero",
-                                "anio": 2023,
-                                "monto": 50
-                            }
-                        ]
-                    },
-                    "proximoPago": {
-                        "fechaLimite": "2023-06-30",
-                        "monto": 50
-                    }
-                },
-                {
-                    "tipo": "Servicio eléctrico",
-                    "numeroContrato": "67890",
-                    "deuda": {
-                        "montoAdeudado": 150,
-                        "cantidadMesesAdeudados": 3,
-                        "detalleMesesAdeudados": [
-                            {
-                                "mes": "Marzo",
-                                "anio": 2023,
-                                "monto": 50
-                            },
-                            {
-                                "mes": "Abril",
-                                "anio": 2023,
-                                "monto": 50
-                            },
-                            {
-                                "mes": "Mayo",
-                                "anio": 2023,
-                                "monto": 50
-                            }
-                        ]
-                    },
-                    "proximoPago": {
-                        "fechaLimite": "2023-07-15",
-                        "monto": 75
-                    }
-                }
-            ],
-            "estadoCuenta": {
-                "proximoPago": {
-                    "fechaLimite": "2023-07-15"
-                }
-            }
+  "usuarios": [
+      {
+          "id": "1",
+          "nombre": "María Gonsalez",
+          "telefono": "+593985912136",
+          "email": "ani@gmail.com",
+          "age": 21,
+          "cedula": "1726953969",
+          "servicios": [
+              {
+                  "tipo": "Agua Potable",
+                  "numeroContrato": "12345",
+                  "deuda": {
+                      "montoAdeudado": 100,
+                      "cantidadMesesAdeudados": 2,
+                      "detalleMesesAdeudados": [
+                          {
+                              "mes": "Enero",
+                              "anio": 2023,
+                              "monto": 50
+                          },
+                          {
+                              "mes": "Febrero",
+                              "anio": 2023,
+                              "monto": 50
+                          }
+                      ]
+                  },
+                  "proximoPago": {
+                      "fechaLimite": "2023-06-30",
+                      "monto": 50
+                  }
+              },
+              {
+                  "tipo": "Servicio eléctrico",
+                  "numeroContrato": "67890",
+                  "deuda": {
+                      "montoAdeudado": 150,
+                      "cantidadMesesAdeudados": 3,
+                      "detalleMesesAdeudados": [
+                          {
+                              "mes": "Marzo",
+                              "anio": 2023,
+                              "monto": 50
+                          },
+                          {
+                              "mes": "Abril",
+                              "anio": 2023,
+                              "monto": 50
+                          },
+                          {
+                              "mes": "Mayo",
+                              "anio": 2023,
+                              "monto": 50
+                          }
+                      ]
+                  },
+                  "proximoPago": {
+                      "fechaLimite": "2023-07-15",
+                      "monto": 75
+                  }
+              }
+          ],
+          "estadoCuenta": {
+              "proximoPago": {
+                  "fechaLimite": "2023-07-15"
+              }
+          }
+      }
+  ],
+  "bancolombia": [
+      {
+        "id": "1",
+        "nombre": "Jhon Doe",
+        "telefono": "+593985912136",
+        "email": "jhondoe@gmail.com",
+        "age": 21,
+        "cedula": "1726953969",
+        "creditosPreaprobados": [
+          {
+            "tipoCredito": "Consumo",
+            "institucionFinanciera": "Banco Pichincha",
+            "montoAprobado": 5000,
+            "plazoMeses": 24,
+            "tasaInteresAnual": 12.5,
+            "fechaValidez": "2025-05-31",
+            "detalleCuotas": [
+              {
+                "numeroCuota": 1,
+                "monto": 235.50,
+                "fechaPago": "2025-06-15"
+              },
+              {
+                "numeroCuota": 2,
+                "monto": 235.50,
+                "fechaPago": "2025-07-15"
+              }
+            ]
+          },
+          {
+            "tipoCredito": "Vehicular",
+            "institucionFinanciera": "Produbanco",
+            "montoAprobado": 12000,
+            "plazoMeses": 36,
+            "tasaInteresAnual": 10.2,
+            "fechaValidez": "2025-06-30",
+            "detalleCuotas": [
+              {
+                "numeroCuota": 1,
+                "monto": 400.75,
+                "fechaPago": "2025-07-01"
+              },
+              {
+                "numeroCuota": 2,
+                "monto": 400.75,
+                "fechaPago": "2025-08-01"
+              }
+            ]
+          }
+        ],
+        "estadoCuenta": {
+          "creditosActivos": 0,
+          "fechaUltimaConsulta": "2025-04-11"
         }
+      }
     ]
 }
